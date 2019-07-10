@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset ('assets/css/style.css') }}">
+</head>
+<body>
+<header>
+
+    <div class="tete">
+        <img class="paysage" src="{{ asset('assets/img/paysage.jpeg') }}" alt="paysage">
+        <div class="links">
+            <a href="{{ path('home') }}">bonjour</a>
+            <a href="{{ path('articles') }}">salut</a>
+            <a href="">hello</a>
+        </div>
+    </div>
+
+</header>
+<main>
+    {% block main %}
+    {% endblock %}
+</main>
+<footer>
+    <div class="pied">
+        <a href="">salut</a>
+        <a href="">bonjour</a>
+        <div class="fin">
+            <img src="{{ asset('assets/img/australie.jpg') }}" alt="">
+        </div>
+        <a href="">hello</a>
+        <a href="">tchouus</a>
+    </div>
+</footer>

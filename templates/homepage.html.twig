@@ -1,0 +1,25 @@
+{% extends 'blokmain.html.twig' %}
+
+{% block main %}
+
+    <div class="australie">
+        <img  src="{{ asset('assets/img/australie.jpg') }}" alt="australie">
+    </div>
+
+    <div class="globe">
+        {% for id, article in articles %}
+
+        <div class="blok">
+
+            <h1>{{ article.title }}</h1>
+            <p>{{ article.content }}</p>
+            <div class="cadre">
+                <img class="image" src="{{ article.image}}" alt="">
+            </div>
+            <a href="{{ path('finish',{'id':id}) }}">voir plus</a>
+        </div>
+
+        {% endfor %}
+    </div>
+
+{% endblock %}

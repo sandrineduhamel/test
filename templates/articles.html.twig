@@ -1,0 +1,26 @@
+{% extends 'blokmain.html.twig' %}
+{% block main %}
+
+
+<div class="globe">
+    //j'appelle dans ma boucle l'id
+    {#Je rajoute un key id a ma boucle + sa valeur #}
+    {% for id, article in articles %}
+        <div class="blok">
+            <h1>{{ article.title }}</h1>
+            <p>{{ article.content }}</p>
+            <div class="cadre">
+                {#j'integre mon id au parametre de la fonction path#}
+                 {#path 2 parametres : le 1er correspond au name de la route#}
+                 {#le second correspond : au nom de la wildcar ('id') et sa valeur (:id)#}
+                 {#path etant le chemin de la route#}
+                {# j'appelle la route qui pour nom "finish" avec son paramètre 'id' qui correspond ici à la key de l'article #}
+                <a href="{{ path('finish', {'id': id }) }}">
+                    <img class="image" src="{{ article.image }}" alt="">
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{asset('assets/css/style.css') }}">
+</head>
+<body>
+<header>
+    <div class="liens">
+        <a href="">bonjour</a>
+        <a href="">hello</a>
+        <a href="">salut</a>
+    </div>
+</header>
+<main>
+    <div class="sidenav">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci atque culpa ea et
+            fuga id impedit, incidunt itaque molestiae nesciunt, nihil officia omnis possimus qui quibusdam quod
+            vero voluptatum!laudantium, minima molestias nulla numquam odio qui, quis quos recusandae rerum sint voluptate Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Beatae deserunt doloremque dolorum fugiat impedit inventore iure magni modi molestias
+            necessitatibus neque obcaecati, provident quia quidem repellat tempore unde vitae Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Autem ipsa repellat sunt. Amet architecto consequuntur facere harum ipsum laudantium, magni qui repellat?
+            Blanditiis eaque incidunt laboriosam placeat provident ratione tenetur.
+        </p>
+    </div>
+
+    {% block main %}
+    {% endblock %}
+</main>
+<footer>
+    {% block footer %}
+    {% endblock %}
+</footer>
+</body>
+</html>

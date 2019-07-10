@@ -1,0 +1,11 @@
+{% extends 'blokmain.html.twig' %}
+{% block main %}
+
+
+    <div class="finish">
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.content }}</p>
+        <img class="source" src="{{ article.image }}" alt="">
+    </div>
+
+{% endblock %}
